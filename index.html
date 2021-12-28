@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>build this webpage - Google Search</title>
+    <link
+      type="image/x-icon"
+      rel="shortcut icon"
+      href="images/google-favicon-32.ico"
+    />
+    <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+    <link type="text/css" rel="stylesheet" href="css/reset-local.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- Logo -->
+      <div class="logo-area">
+        <a href="#" title="Go to Google Home">
+          <img src="images/google-logo.png" alt="Google" class="logo" />
+        </a>
+      </div>
+      <!-- Search -->
+      <div id="search-area">
+        <form class="search-container">
+          <button type="submit" class="search-btn">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+              ></path>
+            </svg>
+          </button>
+          <input
+            type="search"
+            title="Search"
+            value="build this webpage"
+            class="search-bar"
+          />
+        </form>
+      </div>
+      <!-- Apps -->
+      <div id="apps-area">
+        <a href="#" role="button">
+          <svg viewBox="0 0 24 24" class="apps">
+            <path
+              d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+      <!-- Sign in -->
+      <div id="signin-area">
+        <a href="#" class="signin"> Sign in </a>
+      </div>
+      <!-- Navigation -->
+      <nav id="nav">
+        <div class="search-modes">
+          <!-- All -->
+          <a href="#" class="selected-mode nav-mode">
+            <svg viewBox="0 0 24 24" class="mode-icon">
+              <path
+                d="M10 2v2a6 6 0 0 1 6 6h2a8 8 0 0 0-8-8z"
+                fill="#34A853"
+              ></path>
+              <path
+                d="M10 4V2a8 8 0 0 0-8 8h2c0-3.3 2.7-6 6-6z"
+                fill="#EA4335"
+              ></path>
+              <path
+                d="M4 10H2a8 8 0 0 0 8 8v-2c-3.3 0-6-2.69-6-6z"
+                fill="#FBBC04"
+              ></path>
+              <path
+                d="M22 20.59l-5.69-5.69A7.96 7.96 0 0 0 18 10h-2a6 6 0 0 1-6 6v2c1.85 0 3.52-.64 4.88-1.68l5.69 5.69L22 20.59z"
+                fill="#4285F4"
+              ></path>
+            </svg>
+            <span class="mode-text"> All </span>
+          </a>
+          <!-- Maps -->
+          <a href="#" class="nav-mode">
+            <svg viewBox="0 0 24 24" class="mode-icon">
+              <circle cx="12.01" cy="9.32" r="1.93"></circle>
+              <path
+                d="M11.98,21.85c0.01,0,0.01,0,0.02,0s0.01,0,0.02,0c0.67,0,0.89-0.48,1.14-1.09 c0.26-0.59,0.75-1.71,1.29-2.53c0.57-0.85,1.16-1.58,1.75-2.29c1.52-1.87,2.96-3.62,2.96-6.65c0.02-3.94-3.19-7.15-7.14-7.15 c-0.01,0-0.01,0-0.02,0s-0.01,0-0.02,0c-3.95,0-7.15,3.21-7.15,7.15c0,3.03,1.44,4.8,2.96,6.65c0.58,0.71,1.17,1.44,1.75,2.29 c0.54,0.82,1.04,1.93,1.29,2.53C11.1,21.37,11.31,21.85,11.98,21.85z M9.35,14.69C7.88,12.9,6.83,11.62,6.83,9.3 c0-2.84,2.31-5.15,5.15-5.15c0.01,0,0.01,0,0.02,0s0.01,0,0.02,0c2.84,0,5.15,2.31,5.15,5.15c0.01,2.32-1.04,3.61-2.5,5.39 c-0.58,0.71-1.24,1.52-1.87,2.45c-0.3,0.44-0.56,0.94-0.8,1.4c-0.24-0.46-0.5-0.97-0.8-1.4C10.59,16.2,9.93,15.4,9.35,14.69z"
+              ></path>
+            </svg>
+            <span class="mode-text"> Maps </span>
+          </a>
+          <!-- Videos -->
+          <a href="#" class="nav-mode">
+            <svg viewBox="0 0 24 24" class="mode-icon">
+              <path
+                d="M10 16.5l6-4.5-6-4.5v9zM5 20h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1zm14.5 2H5a3 3 0 0 1-3-3V4.4A2.4 2.4 0 0 1 4.4 2h15.2A2.4 2.4 0 0 1 22 4.4v15.1a2.5 2.5 0 0 1-2.5 2.5z"
+              ></path>
+            </svg>
+            <span class="mode-text"> Videos </span>
+          </a>
+          <!-- News -->
+          <a href="#" class="nav-mode">
+            <svg viewBox="0 0 24 24" class="mode-icon">
+              <path
+                d="M12 11h6v2h-6v-2zm-6 6h12v-2H6v2zm0-4h4V7H6v6zm16-7.22v12.44c0 1.54-1.34 2.78-3 2.78H5c-1.64 0-3-1.25-3-2.78V5.78C2 4.26 3.36 3 5 3h14c1.64 0 3 1.25 3 2.78zM19.99 12V5.78c0-.42-.46-.78-1-.78H5c-.54 0-1 .36-1 .78v12.44c0 .42.46.78 1 .78h14c.54 0 1-.36 1-.78V12zM12 9h6V7h-6v2z"
+              ></path>
+            </svg>
+            <span class="mode-text"> News </span>
+          </a>
+          <!-- Images -->
+          <a href="#" class="nav-mode">
+            <svg viewBox="0 0 24 24" class="mode-icon">
+              <path
+                d="M14 13l4 5H6l4-4 1.79 1.78L14 13zm-6.01-2.99A2 2 0 0 0 8 6a2 2 0 0 0-.01 4.01zM22 5v14a3 3 0 0 1-3 2.99H5c-1.64 0-3-1.36-3-3V5c0-1.64 1.36-3 3-3h14c1.65 0 3 1.36 3 3zm-2.01 0a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h7v-.01h7a1 1 0 0 0 1-1V5z"
+              ></path>
+            </svg>
+            <span class="mode-text"> Images </span>
+          </a>
+          <!-- More -->
+          <a href="#" class="nav-mode">
+            <svg viewBox="0 0 24 24" class="mode-icon mode-more">
+              <path
+                d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+              ></path>
+            </svg>
+            <span class="mode-text"> More </span>
+          </a>
+        </div>
+        <!-- Search Settings -->
+        <div class="search-settings">
+          <!-- Settings -->
+          <a href="#" role="button" class="nav-mode">
+            <span class="mode-text"> Settings </span>
+          </a>
+          <!-- Tools -->
+          <a href="#" role="button" class="nav-tools">
+            <span class="tools-text"> Tools </span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main role="main">
+      <div id="main">
+        <p class="results-stats">About 120,000,000 results (0.42 seconds)</p>
+        <div class="search-results-block">
+          <!-- Search Results -->
+          <div class="search-result">
+            <a href="#">
+              <p class="cite">
+                christine-27.github.io › google-homepage
+                <span class="caret">&#9660;</span>
+              </p>
+              <h3>build this webpage - GitHub Pages</h3>
+            </a>
+            <p class="result-text">
+              With zero coding experience, artist <b>building</b> 180
+              <b>webpages</b> . ... days ago, having never done any programming
+              in her life, Jennifer Dewalt built her first <b>webpage</b>.
+            </p>
+          </div>
+          <div class="search-result">
+            <a href="#">
+              <p class="cite">
+                victor-lf.github.io › google-search-results
+                <span class="caret">&#9660;</span>
+              </p>
+              <h3>build this webpage - GitHub Pages</h3>
+            </a>
+            <p class="result-text">
+              With zero coding experience, artist building 180 webpages in 180
+              days ... <b>build this webpage</b> - Google Search
+              https://aryavansh.github.io/googleresults.
+            </p>
+          </div>
+
+          <!-- Videos -->
+          <div class="videos">
+            <h3 class="videos-heading">Videos</h3>
+            <div class="video-box">
+              <a
+                href="https://www.youtube.com/watch?v=YWA-xbsJrVg"
+                class="video-link"
+              >
+                <img
+                  src="images/web-in-10-mins.jpg"
+                  alt="How to Make a Website in 10 mins"
+                />
+                <p class="video-name">
+                  How to Make a<br />Website in 10 mins<br />- Simple &amp; Easy
+                </p>
+              </a>
+              <p class="video-channel">Website Learners</p>
+              <p class="video-source">
+                YouTube <span class="video-date">- Jan 3, 2018</span>
+              </p>
+            </div>
+            <div class="video-box">
+              <a
+                href="https://www.youtube.com/watch?v=Fyg4RKkn8Hw"
+                class="video-link"
+              >
+                <img
+                  src="images/web-from-scratch.jpg"
+                  alt="How To Build A Website From Scratch"
+                />
+                <p class="video-name">
+                  How To Build A <br />Website From <br />Scratch [IN 20
+                  <br />MINS]
+                </p>
+              </a>
+              <p class="video-channel">Create WP Site</p>
+              <p class="video-source">
+                YouTube <span class="video-date">- Apr 1, 2016</span>
+              </p>
+            </div>
+            <div class="video-box">
+              <a
+                href="https://www.youtube.com/watch?v=l3mUE6qj2Qg"
+                class="video-link"
+              >
+                <img
+                  src="images/web-without-code.jpg"
+                  alt="How To Build a Website Without Code"
+                />
+                <p class="video-name">
+                  How To Build a <br />Website Without <br />Code | Everyone
+                  <br />Can Build a ...
+                </p>
+              </a>
+              <p class="video-channel">Roberto Blake</p>
+              <p class="video-source">
+                YouTube <span class="video-date">- Nov 8, 2016</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Search Results -->
+          <div class="search-result">
+            <a href="#">
+              <p class="cite">
+                arstechnica.com › information-technology › 2013/07 ›
+                with-zero-cod... <span class="caret">&#9660;</span>
+              </p>
+              <h3>
+                With zero coding experience, artist building 180 webpages in ...
+              </h3>
+            </a>
+            <p class="result-text">
+              <span class="result-date">Jul 26, 2013 - </span>117 days ago,
+              having never done any programming in her life, Jennifer Dewalt
+              built her first <b>webpage</b>. The next day, she built another,
+              and she ...
+            </p>
+          </div>
+          <div class="search-result">
+            <a href="#">
+              <p class="cite">
+                www.websitebuilderexpert.com › building-websites
+                <span class="caret">&#9660;</span>
+              </p>
+              <h3>
+                How to Build a Website: the Step-by-Step Guide to Easy Setup ...
+              </h3>
+            </a>
+            <p class="result-text">
+              <span class="result-date">Jan 15, 2020 - </span>We'll be going
+              through the <b>website building</b> process for both approaches
+              here. You'll be surprised by how simple it can be, especially when
+              ...
+            </p>
+          </div>
+          <div class="search-result">
+            <a href="#">
+              <p class="cite">
+                www.buildthis.io › make-a-website
+                <span class="caret">&#9660;</span>
+              </p>
+              <h3>
+                How to Build A Website: A-to-Z Beginner Guide - BuildThis.io
+              </h3>
+            </a>
+            <p class="result-text">
+              <span class="result-date">Feb 10, 2020 - </span>It's easy to
+              create a <b>website</b> today even if you aren't a tech-novice.
+              Here are the 5 essential steps to follow if you wish to
+              <b>build</b> a <b>website</b> by ...
+            </p>
+          </div>
+
+          <!-- Questions Box -->
+          <div class="questions-box">
+            <h2 class="questions-box-title">People also ask</h2>
+            <a href="#">
+              <p class="question">
+                How can I create my own webpage?
+                <svg viewBox="0 0 24 24" class="question-arrow">
+                  <path
+                    d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                  ></path>
+                </svg>
+              </p>
+              <p class="question">
+                How much does it cost to build a website?
+                <svg viewBox="0 0 24 24" class="question-arrow">
+                  <path
+                    d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                  ></path>
+                </svg>
+              </p>
+              <p class="question">
+                How do you build an awesome website?
+                <svg viewBox="0 0 24 24" class="question-arrow">
+                  <path
+                    d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                  ></path>
+                </svg>
+              </p>
+            </a>
+            <a href="#" class="question-feedback">Feedback</a>
+          </div>
+
+          <!-- Search Results -->
+          <div class="search-result">
+            <a href="#">
+              <p class="cite">
+                websitesetup.org <span class="caret">&#9660;</span>
+              </p>
+              <h3>
+                How to Create a Website: Step-by-Step Guide for Beginners ...
+              </h3>
+            </a>
+            <p class="result-text">
+              <span class="result-date">Dec 12, 2019 - </span>Learn how to make
+              a <b>website</b> and set it up. This site contains different
+              tutorials on how to <b>build</b> a <b>website</b> using WordPress,
+              Joomla, Drupal ...
+            </p>
+          </div>
+          <div class="search-result">
+            <a href="#">
+              <p class="cite">
+                www.squarespace.com <span class="caret">&#9660;</span>
+              </p>
+              <h3>Squarespace: Build a Website – Website Builder</h3>
+            </a>
+            <p class="result-text">
+              Squarespace is the all-in-one solution for anyone looking to
+              create a beautiful <b>website</b>. Domains, eCommerce, hosting,
+              galleries, analytics, and 24/7 support all ...
+            </p>
+          </div>
+          <div class="search-result">
+            <a href="#">
+              <p class="cite">
+                www.website.com <span class="caret">&#9660;</span>
+              </p>
+              <h3>
+                Create Your Website for Free | Free Site Builder | Website.com
+              </h3>
+            </a>
+            <p class="result-text">
+              Domain names, web hosting, <b>website</b> templates, and ecommerce
+              solutions ... <b>Build</b> a credible brand identity with your
+              custom domain name - included for free ...
+            </p>
+          </div>
+          <div class="search-result">
+            <a href="#">
+              <p class="cite">
+                www.webnode.com <span class="caret">&#9660;</span>
+              </p>
+              <h3>
+                Webnode: Create a free website easily | Free website builder
+              </h3>
+            </a>
+            <p class="result-text">
+              You can create and own your <b>website</b> for free for unlimited
+              time. Make a ... With Webnode, you can <b>build</b> your online
+              presence in less than 5 minutes. Sign up ...
+            </p>
+          </div>
+          <div class="search-result">
+            <a href="#">
+              <p class="cite">
+                makeawebsitehub.com <span class="caret">&#9660;</span>
+              </p>
+              <h3>
+                How to Make a Website in 2020 - Free Easy Guide to Building ...
+              </h3>
+            </a>
+            <p class="result-text">
+              This site teaches you how to make a <b>website</b> in just 3 easy
+              to follow steps. There's also lots of really useful resources to
+              help you <b>build</b> traffic in 2020.
+            </p>
+          </div>
+        </div>
+
+        <!-- Related Search - Website Builders -->
+        <div class="related-search-box">
+          <p class="related-search">Related search</p>
+          <p class="related-search-title">
+            Free website builders
+            <a href="#" class="more-related-items">View 3+ more</a>
+          </p>
+          <div class="items-links">
+            <div class="item">
+              <a href="#" title="WordPress">
+                <img
+                  src="images/wordpress.jpg"
+                  alt="WordPress"
+                  class="item-logo"
+                />
+                <p class="item-name">WordPress</p>
+              </a>
+            </div>
+            <div class="item">
+              <a href="#" title="GoDaddy">
+                <img src="images/godaddy.jpg" alt="GoDaddy" class="item-logo" />
+                <p class="item-name">GoDaddy</p>
+              </a>
+            </div>
+            <div class="item" title="Weebly">
+              <a href="#">
+                <img src="images/weebly.jpg" alt="Weebly" class="item-logo" />
+                <p class="item-name">Weebly</p>
+              </a>
+            </div>
+            <div class="item">
+              <a href="#" title="Jimdo">
+                <img src="images/jimdo.jpg" alt="Jimdo" class="item-logo" />
+                <p class="item-name">Jimdo</p>
+              </a>
+            </div>
+            <div class="item">
+              <a href="#" title="Webnode">
+                <img src="images/webnode.jpg" alt="Webnode" class="item-logo" />
+                <p class="item-name">Webnode</p>
+              </a>
+            </div>
+            <div class="item" title="Webs">
+              <a href="#">
+                <img src="images/webs.jpg" alt="Webs" class="item-logo" />
+                <p class="item-name">Webs</p>
+              </a>
+            </div>
+            <div class="item">
+              <a href="#" title="IM Creator">
+                <img
+                  src="images/im-creator.jpg"
+                  alt="IM Creator"
+                  class="item-logo"
+                />
+                <p class="item-name">IM Creator</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Search - Web Design Programs -->
+        <div class="related-search-box">
+          <p class="related-search">Related search</p>
+          <p class="related-search-title">
+            Web design program
+            <a href="#" class="more-related-items">View 3+ more</a>
+          </p>
+          <div class="items-links">
+            <div class="item">
+              <a href="#" title="Mobirise">
+                <img
+                  src="images/mobirise.jpg"
+                  alt="Mobirise"
+                  class="item-logo"
+                />
+                <p class="item-name">Mobirise</p>
+              </a>
+            </div>
+            <div class="item" title="Google Web Designer">
+              <a href="#">
+                <img
+                  src="images/google-web-designer.jpg"
+                  alt="Google Web Designer"
+                  class="item-logo"
+                />
+                <p class="item-name">Google Web Designer</p>
+              </a>
+            </div>
+            <div class="item" title="Adobe Dreamweaver">
+              <a href="#">
+                <img
+                  src="images/adobe-dreamweaver.jpg"
+                  alt="Adobe Dreamweaver"
+                  class="item-logo"
+                />
+                <p class="item-name">Adobe Dreamweaver</p>
+              </a>
+            </div>
+            <div class="item" title="openElement">
+              <a href="#">
+                <img
+                  src="images/openelement.jpg"
+                  alt="openElement"
+                  class="item-logo"
+                />
+                <p class="item-name">openElement</p>
+              </a>
+            </div>
+            <div class="item" title="Bootstrap Studio">
+              <a href="#">
+                <img
+                  src="images/bootstrap-studio.jpg"
+                  alt="Bootstrap Studio"
+                  class="item-logo"
+                />
+                <p class="item-name">Bootstrap Studio</p>
+              </a>
+            </div>
+            <div class="item" title="RapidWeaver">
+              <a href="#">
+                <img
+                  src="images/rapidweaver.jpg"
+                  alt="RapidWeaver"
+                  class="item-logo"
+                />
+                <p class="item-name">RapidWeaver</p>
+              </a>
+            </div>
+            <div class="item" title="Microsoft Expression Web">
+              <a href="#">
+                <img
+                  src="images/microsoft-expression-web.jpg"
+                  alt="Microsoft Expression Web"
+                  class="item-logo"
+                />
+                <p class="item-name">Microsoft Expression Web</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="related-search-feedback">Feedback</a>
+
+        <!-- Related Searches -->
+        <h3 class="related-searches-heading">
+          Searches related to build this webpage
+        </h3>
+        <div class="related-searches-block">
+          <div class="related-searches-card">
+            <a href="#">how to design a website</a>
+            <a href="#">how to create a website pdf</a>
+            <a href="#">github</a>
+          </div>
+          <div class="related-searches-card">
+            <a href="#"
+              >how to <span class="no-bold">build</span> a website locally</a
+            >
+            <a href="#"
+              >learn how to <span class="no-bold">build</span> a website</a
+            >
+            <a href="#">website building software</a>
+          </div>
+        </div>
+
+        <!-- Pager -->
+        <table class="pager" role="presentation">
+          <tr>
+            <td class="pager-td">
+              <span class="pager-G"></span>
+            </td>
+            <td class="pager-td">
+              <span class="pager-red-o"></span>
+              1
+            </td>
+            <td class="pager-td">
+              <a href="#" aria-label="Page 2">
+                <span class="pager-yellow-o"></span>
+                2
+              </a>
+            </td>
+            <td class="pager-td">
+              <a href="#" aria-label="Page 3">
+                <span class="pager-yellow-o"></span>
+                3
+              </a>
+            </td>
+            <td class="pager-td">
+              <a href="#" aria-label="Page 4">
+                <span class="pager-yellow-o"></span>
+                4
+              </a>
+            </td>
+            <td class="pager-td">
+              <a href="#" aria-label="Page 5">
+                <span class="pager-yellow-o"></span>
+                5
+              </a>
+            </td>
+            <td class="pager-td">
+              <a href="#" aria-label="Page 6">
+                <span class="pager-yellow-o"></span>
+                6
+              </a>
+            </td>
+            <td class="pager-td">
+              <a href="#" aria-label="Page 7">
+                <span class="pager-yellow-o"></span>
+                7
+              </a>
+            </td>
+            <td class="pager-td">
+              <a href="#" aria-label="Page 8">
+                <span class="pager-yellow-o"></span>
+                8
+              </a>
+            </td>
+            <td class="pager-td">
+              <a href="#" aria-label="Page 9">
+                <span class="pager-yellow-o"></span>
+                9
+              </a>
+            </td>
+            <td class="pager-td">
+              <a href="#" aria-label="Page 10">
+                <span class="pager-yellow-o"></span>
+                10
+              </a>
+            </td>
+            <td class="pager-td">
+              <a href="#">
+                <span class="pager-gle"></span>
+                <span class="pager-next">Next</span>
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="location">
+        <span class="space">Space</span>
+        <div class="location-row">
+          <span class="circle"></span>
+          <span class="moonland">Earth</span>
+          <span class="loc">- From your Internet address -</span>
+          <a href="#" class="footer-loc-link">Use precise location</a>
+          <span class="loc">-</span>
+          <a href="#" class="footer-loc-link">Learn more</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#" class="footer-link">Help</a>
+        <a href="#" class="footer-link">Send feedback</a>
+        <a href="#" class="footer-link">Privacy</a>
+        <a href="#" class="footer-link">Terms</a>
+      </div>
+    </footer>
+  </body>
+</html>
